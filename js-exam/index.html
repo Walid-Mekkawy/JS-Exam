@@ -1,0 +1,810 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/af60ee0f55.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Yummy</title>
+  <link rel="icon" type="image/x-icon" href="./icons/logo.png">
+
+</head>
+
+
+<body>
+  <main>
+    <!-- side naviagtion -->
+    <nav>
+      <div class="container-fluid position-relative">
+        <div class="offcanvas offcanvas-start  text-bg-dark">
+          <div class="offcanvas-content">
+            <div class="offcanvas-body">
+              <button type="button" class="btn-close btn-close-white position-absolute end-0"></button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#mainRecipes">
+                    <i class="fa-solid fa-house me-2"></i>
+                    Home</a>
+                </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#categoriesSection">
+                    <i class="fa-solid fa-list me-2 "></i>
+                    categories
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#countriesSection">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    world cuisine</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#ingredientsSection">
+                    <i class="fa-solid fa-utensils me-2 "></i>
+                    ingredients
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#searchContainer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    search</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#savedGames">
+                    <i class="fa-regular fa-bookmark me-2"></i>
+                    saved recipes
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactSection">
+                    <i class="fa-regular fa-envelope me-2"></i>
+                    contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-nav d-flex flex-column justify-content-between align-items-center p-2 py-4">
+            <img src="./icons/logo.png" class="w-100" alt="">
+            <i class="sidebarBtn fa-solid fa-bars fa-2xl"></i>
+            <div class="social-media">
+              <i class="fa-solid fa-globe fa-lg"></i>
+              <i class="fa-solid fa-share-nodes fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main page -->
+    <section id="mainRecipes" class="section ">
+      <div class="pt-4">
+        <a href="" class="fas fa-arrow-left fa-lg m-4"></a>
+        <!-- search page  -->
+        <div id="searchContainer" class="section container w-75 d-none">
+          <div class="row py-4 ">
+            <div class="form-floating col-md-6 mb-3 position-relative ">
+              <input type="text" class="form-control rounded-5 px-4" id="searchByName" placeholder="search by name">
+              <label class="ms-4 " for="searchByName">search by name</label>
+              <div type="submit" class="position-absolute top-50 end-0 me-5 translate-middle-y">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <div class="form-floating col-md-6 mb-3 position-relative ">
+              <input type="text" class="form-control rounded-5 px-4" id="searchByfLetter"
+                placeholder="search by first letter" maxlength="1">
+              <label class="ms-4 " for="searchByfLetter">search by first letter</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="mealContainer" class="row g-4 p-4">
+          <!-- <div class="col-md-3">
+            <div class="recipe-card position-relative ">
+              <figure>
+                <img src="./images/food.jpg" class="w-100" alt="">
+              </figure>
+
+              <figcaption
+                class="position-absolute top-0 bg-danger bg-opacity-100 h-100 w-100 d-flex justify-content-center align-items-center">
+                <h2 class=""></h2>
+              </figcaption>
+            </div>
+          </div> -->
+        </div>
+
+        <nav aria-label="...">
+          <ul class="pagination justify-content-center pointer-event">
+            <li class="page-item">
+              <a class="page-link prev">Previous</a>
+            </li>
+
+            <li class="page-item ms-2 ">
+              <a class="page-link next">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- categories -->
+    <section id="categoriesSection" class="section d-none">
+      <div class="pt-4">
+        <div class="row g-4 p-4">
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/beef.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Beef</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/breakfast.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Breakfast</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/chicken.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Chicken</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/dessert.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Dessert</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/goat.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Goat</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/lamb.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Lamb</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/miscellaneous.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Miscellaneous</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/pasta.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Pasta</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/pork.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Pork</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/seafood.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Seafood</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/side.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Side</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/starter.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Starter</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/vegan.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Vegan</h2>
+              </figcaption>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="categories-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/categories/vegetarian.png" class="w-25" alt="">
+              </figure>
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Vegetarian</h2>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- countries section -->
+    <section id="countriesSection" class="section d-none">
+      <div class="pt-4">
+        <div class="row g-4 p-4">
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center" class="d-flex justify-content-center">
+                <img src="./icons/icons8-usa-48.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">American</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-great-britain-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">British</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-canada-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Canadian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-china-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Chinese</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-croatia-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Croatian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-netherlands-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Dutch</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-egypt-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Egyptian </h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-philippines-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Filipino</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-france-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">French</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-greece-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Greek</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-india-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Indian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-ireland-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Irish</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-italy-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Italian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-jamaica-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Jamaican </h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-japan-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Japanese</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-kenya-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Kenyan</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-malaysia-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Malaysian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-mexico-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Mexican</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-morocco-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Moroccan</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-poland-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Polish</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-portugal-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Portuguese</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-russian-federation-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Russian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-spain-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Spanish</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-thailand-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Thai</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-tunisia-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Tunisian</h2>
+              </figcaption>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-turkey-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Turkish</h2>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-vietnam-96.png" class="w-25" alt="">
+              </figure>
+
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Vietnamese</h2>
+              </figcaption>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="country-card position-relative">
+              <figure class="d-flex justify-content-center">
+                <img src="./icons/icons8-globe-96.png" class="w-25" alt="">
+              </figure>
+              <figcaption class="d-flex justify-content-center">
+                <h2 class="">Unknown</h2>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ingredients  -->
+    <section id="ingredientsSection" class="section d-none">
+      <div class=" pt-4">
+        <div id="ingredientContainer" class="row p-2">
+          <div class="col-md-2">
+            <h2 class="section-header">saved games</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section  -->
+    <section id="contactSection" class="d-none section">
+      <div class="container ">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+              <form class="mx-1 mx-md-4">
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                  <div class="form-outline w-100 mb-0">
+                    <input type="text" id="name" class="form-control" />
+                    <label class="form-label" for="name">Your Name</label>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                  <div class="form-outline w-100 mb-0">
+                    <input type="email" id="email" class="form-control" />
+                    <label class="form-label" for="email">Your Email</label>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex flex-row align-items-center w-100 mb-4">
+                    <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline mb-0">
+                      <input type="number" maxlength="11" id="phoneNumber" class="form-control" />
+                      <label class="form-label" for="phoneNumber">phone number</label>
+                    </div>
+                  </div>
+
+                  <div class="w-50">
+                    <select id="age" class="1-100 w-100 form-select"></select>
+                    <label for="age class="form-label select-label">age</label>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                  <div class="form-outline w-100 mb-0">
+                    <input type="password" id="password" class="form-control" />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                  <div class="form-outline w-100 mb-0">
+                    <input type="password" id="rePassword" class="form-control" />
+                    <label class="form-label" for="rePassword">Repeat your password</label>
+                  </div>
+                </div>
+
+
+                <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                  <button type="button" class="btn btn-primary btn-lg submitBtn">submit</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- recipe popup page  -->
+  <section id="recipeDetails"
+    class="hideBox d-flex justify-content-center align-items-center position-fixed start-0 top-0 vw-100 h-100 z-3 overflow-y-auto">
+    <i class="fa-solid fa-multiply position-absolute"></i>
+    <div id="recipeDetailsContainer" class="container row d-flex justify-content-cente h-100 position-relative ">
+      <!-- <div class="col-md-4">
+        <figure class=" d-flex flex-column my-4">
+          <img src="./images/food.jpg" class="w-100" alt="">
+          <div class="d-flex justify-content-between my-4 my-md-0">
+            
+            <i class="fa-regular fa-bookmark fa-2xl "></i>
+          </div>
+        </figure>
+      </div>
+
+      <div class="col-md-8">
+        <h2>instructions:</h2>
+        <p>
+          STEP 1
+        </p>
+        <div class="ingredients row">
+          <h2 class="section-header">saved games</h2>
+        </div>
+        <div class="info d-flex py-4">
+          <div>
+            <h5>cuisine:</h5>
+            <a href="#">japanese</a>
+          </div>
+          <div class="ms-4">
+            <h5>category:</h5>
+            <a href="#">seafood</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- loading popup page  -->
+  <section class="loading d-flex justify-content-center align-items-center position-absolute top-0 start-0">
+    <div class="loader"></div>
+  </section>
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
